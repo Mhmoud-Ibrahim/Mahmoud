@@ -1,0 +1,162 @@
+/* rols */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-color:orange;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color) !important;
+    font-weight:600;
+    font-size: 20px !important;
+}
+li{
+    list-style: none;
+    
+}
+.text-main{
+    color: var(--main-color) !important;
+}
+.btn-main{
+    background-color: var(--main-color) !important;
+    color: black !important;
+}
+
+ .home{
+    width: 10px;
+    height: 10px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/bg1.avif);
+    background-position: center center;
+    background-size: cover;
+ }
+.imgRotate {
+    transform: rotate(180deg);
+ }
+ .navbar{
+    height: 0px;
+    background-color: #302f2f;
+ }
+button,.nav-link {
+   display: none;
+ }
+ .nav-link{
+    box-shadow:0  0  #aaccff;
+ }
+ .nav-link:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
+ }
+ .home-info h2{
+     font-size:70px;
+    
+ }
+ .home-info h2,h3 {
+    display: none;
+ }
+ .footer  {
+    height: 0;
+    background-color: #302f2f;
+ }
+#typing{
+    font-size:40px !important;
+    color: var(--main-color) !important;
+ }
+@media screen and(max-width:779px) {
+    #typing{
+        width: 100% !important;
+    }
+}
+ .home-info i {
+    transition: 1s all;
+ }
+
+.typing p {
+  font-size:30px !important;
+  
+}
+
+.conect{
+    display: none;
+}
+.home .conect .social i:hover {
+        transform: translateY(7px);
+        transition: 0.3s all;
+}
+
+/* mahmoud animation */
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color:yellow;
+    --fs-size: 1em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+/* mahmoud animation */
+
+.glowing-button{
+    background-color: #aaccff;
+    border:none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #fff;
+    display: inline;
+    margin: 15%;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #aaccff;
+    transform: all 0.3s ease-in-out;
+}
+.glowing-button:hover{
+box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
+}
+
+/* start about  */
+.heading h2 {
+    font-size: 85px;
+    color: #ccc;
+}
+.heading p {
+    font-size: 25px;
+    margin: auto;
+    transform: translateY(-80%);
+}
+/* end about */
