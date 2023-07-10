@@ -1,7 +1,7 @@
 
 
 let i = 0;
-let txt = "                                        I'm Mahmoud Ibrahim            I'm front-end developer (React).";
+let txt = "                          I'm Mahmoud             I'm front-end developer (React).";
 let speed = 200; 
 function typeWriter() {
   if (i < txt.length) {
@@ -12,4 +12,4 @@ function typeWriter() {
   }
 }
 
-typeWriter() 
+typeWriter();

@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a id="projectlink" class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -57,9 +57,9 @@
               </div>
 
 
-    <div class="conect   px-5 text-center mt-5   flex-column py-4">
+    <div class="connect   px-5 text-center mt-5   flex-column py-4">
       <div class="social mx-auto w-75">
-        <a href="tel:0201278576173"><i class="fas fa-phone text-main fa-2x m-3" ></i></a>
+        <a href="tel:0201278576173"><i class="fas fa-phone text-main  fa-2x m-3" ></i></a>
         <a href="https://wa.me/01278576173"> <i class="fab fa-whatsapp text-success fa-2x m-3" ></i></a>
        <a href="https://github.com/Mhmoud-Ibrahim"> <i class="fab fa-github text-secondary fa-2x " ></i></a>
         <a href="https://www.linkedin.com/in/mahmoud-ebrahim-0261bb22a"> <i class="fab fa-linkedin text-primary fa-2x m-2" ></i></a>
@@ -72,8 +72,9 @@
 
 </section>
 <!-- end home  -->
+
 <!-- start-about  -->
-<section id="about" class="about mt-3">
+<section id="about" class="about mt-3 ">
 
   <div class="heading w-75  mx-auto text-center">
     <h2 class=" fw-bolder">Mahmoud Ibrahim</h2>
@@ -81,36 +82,288 @@
   </div>
 
   <div class="px-5 mt-2 mx-auto w-100">
-    <div class="row">
-      <div class="col-md-4 bg-danger">
-        <img width="100" src="img/m.jpg" alt="Mahmoud front-end developer">
+    <div class="row mb-2 p-4">
+      <div class="col-md-4 ">
+        <div class="myImage ">
+           <img width="100" src="img/m.jpg" alt="Mahmoud front-end developer">
+        </div>
+       
       </div>
-      <div class="col-md-8 bg-info">
-        <div class="my-info ">
-          <h2>Mahmoud </h2>
-          <p>Objective
+      <div class="col-md-8 ">
+        <div class="my-info mx-4 py-4">
+          <h2 class="text-main  fw-bold fs-1">Mahmoud Ibrahim Mohammmed </h2>
+          <p class="ml-4">Objective
             I am seeking a competitive and challenging 
             environment where I can serve your organization and establish 
             a career for myself and use my experience and education to help 
             the company meet and surpass its goals.</p>
-          <ul class="bg-primary " >
+          <ul >
             <li><span>Name :</span>Mahmoud Ibrahim Mohamed</li>
             <li><span>Date of Birth:</span>01/09/1988</li>
             <li><span>Job Title:</span>Front-end developer</li>
-            <li><span>Location:</span>Egypy cairo</li>
+            <li><span>Location:</span>Egypt cairo</li>
             
           </ul>
         </div>
       </div>
 
     </div>
-<div class="testmonia">
-  
+<div class="Pfojects mb-2">
+  <div class="heading w-75  mx-auto text-center">
+    <h2 class=" fw-bolder">some projects</h2>
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner w-75 mx-auto rounded-3 ">
+
+      <div class="carousel-item active ">
+        <img src="img/project-picture/Game.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/project-picture/Trending2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/project-picture/E-comercy3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/project-picture/quiz (2).jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/project-picture/meals.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/project-picture/freshmeals.jpg" class="d-block w-100" alt="...">
+      </div>
+    
+    </div>
+
+
+    <button class="carousel-control-prev bg-main" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next bg-main" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>    
   </div>
 </section>
 <!-- end- about  -->
 <!-- start projects -->
+<section id="projects" class="projects  mt-4 mb-3">
+  <div class="heading w-75  mx-auto text-center">
+    <h2 class=" fw-bolder">My Lastes Projects</h2>
+    <p>some projects in react and other</p>
+  </div>
+  <div class="containter">
+    <div class="row px-4 g-4">
+
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/Trending2.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Trending</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/Trending/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150" class="rounded-2" src="img/project-picture/e-comercy.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">E-comercy</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/E-comercy/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/Notes.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Simple CRUD</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/cruds1/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/freshmeals.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Freshmeals</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/Yummyjs/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/quiz (2).jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Quiz</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/Quiezes/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/wather.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Weather</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/Weather/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/Game.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Game</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/MyGames/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/XO.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">x.O</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/Xo-game/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/simon.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Simon</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/simon5/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/quotes.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">quotes</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/e-comercy.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">E-comercy</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/E-comercy/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/E-comercy3.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">E-comercy</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/bookmarker.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">bookMarker</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/bookmarker/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/memory-game.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">E-comercy</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/Memorygame/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/divfolio.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Divefolio</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/Divefolio-/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/party.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Egyption party</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/EgyptionParty/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/photoghrafer.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">photoghrapher</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/photographer/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/meals.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">Meals</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/meals/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/Calculator.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">First Calulator</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/calculator/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3 p-2">
+        <div class="card rounded-2 text-center py-2">
+          <img height="150"  class="rounded-2" src="img/project-picture/searchMeals.jpg" alt="">
+          <h4 class="text-main fw-bold m-1">First Calulator</h4>
+          <p class="m-2 text-muted">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.</p>
+          <a href="https://mhmoud-ibrahim.github.io/RecipiesFood/">
+            <button  class="btn glowing-button text-dark fw-bold mt-1 mb-2 btn-sm  m-2 mx-5" >show Live</button>
+          </a>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
 <!-- end projects -->
 <!-- start- Contact -->
 <!-- end- contact -->

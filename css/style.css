@@ -3,9 +3,11 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #ede9e9;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 :root{
     --main-color:orange;
@@ -78,15 +80,14 @@ button,.nav-link {
 
 .typing p {
   font-size:30px !important;
-  
 }
-
-.conect{
-    display: none;
+.connect {
+display: none;
 }
 .home .conect .social i:hover {
         transform: translateY(7px);
         transition: 0.3s all;
+        box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
 }
 
 /* mahmoud animation */
@@ -159,4 +160,77 @@ box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
     margin: auto;
     transform: translateY(-80%);
 }
+@media screen and (max-width:600px) {
+    .heading h2 {
+        font-size:45px !important;
+       }
+       .about .my-info h2 {
+        font-size: 25px !important;
+       }
+}
 /* end about */
+.about {
+    display: none;
+}
+.myImage{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/bg2.webp);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  
+}
+.myImage img {
+    width:50%;
+    height:50%; 
+    border: 7px solid var(--main-color);
+    border-radius: 20px 0;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    transform: 0.4s all;
+position: relative;
+}
+
+.myImage:hover img {
+    box-shadow: 0 0 20px #aaccff,0 0 50px #aaccff, 0 0 100px #aaccff;
+}
+.about .my-info {
+    margin-left:50px !important;
+}
+ .about span{
+    color: #302f2f;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 7px;
+}
+.about p {
+    font-size: 18px;
+    line-height:40px;
+}
+.about li{
+    font-size: 18px;
+    line-height:40px;
+}
+.about .my-info h2 {
+    text-transform: capitalize;
+    text-shadow: 5px 8px 7px black;
+}
+.about .row {
+    background-color: #aaccff;
+   
+}
+/* end about */
+/* start projects */
+.projects .containter, .projects .heading{
+    transition: 0.5s all;
+    /* display: none; */
+}
+
+.projects .card{
+    background-color: #ccc !important;
+}
+.projects .col-md-3:hover {
+    box-shadow: 0 0 20px #302f2f,0 0 50px #302f2f, 0 0 100px #302f2f;
+}
+/* end projects */
