@@ -44,17 +44,34 @@ li{
     height: 0px;
     background-color: #302f2f;
  }
+ 
+ 
+ .navbar  #navbar-toggler{
+    background-color: var(--main-color) !important;
+    color: #aaccff;
+ }
+ @media screen and (min-width:991px) {
+    .navbar-toggler-icon{
+  display: none;
+}
+.navbar  #navbar-toggler{
+    display: none !important;
+  
+ }
+ }
 
- 
-
-    
- 
- 
 button,.nav-link {
    display: none;
  }
- .nav-link{
-    box-shadow:0  0  #aaccff;
+ .nav-item{
+   
+    text-align:right;
+    margin-top: 5px;
+    margin-bottom:15px !important;
+    z-index: 99999;
+}
+.nav-link{
+    box-shadow:0  0  #aaccff; 
  }
  .nav-link:hover{
     border-radius: 20px;
@@ -75,17 +92,9 @@ button,.nav-link {
     font-size:40px !important;
     color: var(--main-color) !important;
  }
-@media screen and(max-width:779px) {
-    #typing{
-        width: 100% !important;
-    }
-    .home.home-info h2{
-        font-size: 20px !important;
-    }
-    .home.home-info h3{
-        font-size: 10px !important;
-    }
-}
+
+
+
  .home-info i {
     transition: 1s all;
  }
@@ -168,18 +177,11 @@ box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
     color: #ccc;
 }
 .heading p {
-    font-size: 25px;
+    font-size: 25px !important;
     margin: auto;
     transform: translateY(-80%);
 }
-@media screen and (max-width:600px) {
-    .heading h2 {
-        font-size:45px !important;
-       }
-       .about .my-info h2 {
-        font-size: 25px !important;
-       }
-}
+
 /* end about */
 .about {
     display: none;
@@ -229,7 +231,7 @@ position: relative;
     text-shadow: 5px 8px 7px black;
 }
 .about .row {
-    background-color: #aaccff;
+    background-color: #d8e7fe;
    
 }
 /* end about */
@@ -241,8 +243,67 @@ position: relative;
 
 .projects .card{
     background-color: #ccc !important;
+    transition: 1s all;
 }
 .projects .col-md-3:hover {
     box-shadow: 0 0 20px #302f2f,0 0 50px #302f2f, 0 0 100px #302f2f;
 }
 /* end projects */
+ /* mediaquery */
+ @media screen and(max-width:779px) {
+    #typing{
+        width: 100% !important;
+    }
+    .home.home-info h2{
+        font-size: 20px !important;
+    }
+    .home.home-info h3{
+        font-size: 10px !important;
+    }
+  
+}
+@media screen and (max-width:991px){
+    .heading h2 {
+        font-size:40px !important;
+       }
+       .projects .card .glowing-button{
+        width: 50% !important;
+    font-size: 10px !important;
+       }
+}
+@media screen and (max-width:600px) {
+   
+    .heading p {
+        font-size:15px !important;
+       }
+       .about .my-info h2 {
+        font-size: 25px !important;
+       }
+       .heading h2 {
+        font-size:30px !important;
+       }
+}
+@media screen and (max-width:395px) {
+    .home-info h2{
+      font-size: 40px !important;
+    }
+    .home-info h3{
+      font-size:17px !important;
+    }
+    #typing {
+        font-size: 20px !important;
+    }
+    .connect .social {
+        display: flex !important;
+        margin: auto;
+        text-align: center;
+    }
+    #resume{
+        width: 100%;
+        margin: auto !important;
+        margin-top: 10px !important;
+    }
+   
+}
+
+ /* mediaquery
