@@ -8,6 +8,11 @@ body{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    height: 600vh;
+}
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
 }
 :root{
     --main-color:orange;
@@ -29,7 +34,7 @@ li{
     background-color: var(--main-color) !important;
     color: black !important;
 }
-
+/* home */
  .home{
     width: 10px;
     height: 10px;
@@ -44,22 +49,10 @@ li{
     height: 0px;
     background-color: #302f2f;
  }
- 
- 
  .navbar  #navbar-toggler{
     background-color: var(--main-color) !important;
     color: #aaccff;
  }
- @media screen and (min-width:991px) {
-    .navbar-toggler-icon{
-  display: none;
-}
-.navbar  #navbar-toggler{
-    display: none !important;
-  
- }
- }
-
 button,.nav-link {
    display: none;
  }
@@ -172,6 +165,7 @@ box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
 }
 
 /* start about  */
+
 .heading h2 {
     font-size: 85px;
     color: #ccc;
@@ -182,10 +176,7 @@ box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
     transform: translateY(-80%);
 }
 
-/* end about */
-.about {
-    display: none;
-}
+
 .myImage{
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../img/bg2.webp);
     background-position: center center;
@@ -234,19 +225,42 @@ position: relative;
     background-color: #d8e7fe;
    
 }
+.Pfojectsslide{
+    display: none;
+}
+#heading {
+    display: none;
+}
+.about .row{
+    display: none;
+}
+
+
+
 /* end about */
 /* start projects */
-.projects .containter, .projects .heading{
+.project {
+    display: none;
+}
+
+.project .col-md-3 {
+    display: none;
+}
+.project .containter, .projects .heading{
     transition: 0.5s all;
     /* display: none; */
 }
-
-.projects .card{
+.project .col-md-3 {
+    transition: 0.3s all;
+}
+.project .card{
     background-color: #ccc !important;
     transition: 1s all;
+
 }
-.projects .col-md-3:hover {
+.project .col-md-3:hover .card {
     box-shadow: 0 0 20px #302f2f,0 0 50px #302f2f, 0 0 100px #302f2f;
+    border-radius: 10px;
 }
 /* end projects */
  /* mediaquery */
@@ -305,5 +319,14 @@ position: relative;
     }
    
 }
+@media screen and (min-width:991px) {
+    .navbar-toggler-icon{
+  display: none;
+}
+.navbar  #navbar-toggler{
+    display: none !important;
+  
+ }
+ }
 
  /* mediaquery
