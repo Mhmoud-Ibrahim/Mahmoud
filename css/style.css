@@ -227,6 +227,11 @@ position: relative;
 }
 .Pfojectsslide{
     display: none;
+    
+}
+.Pfojectsslide {
+    background-color: #302f2f !important;
+    
 }
 #heading {
     display: none;
