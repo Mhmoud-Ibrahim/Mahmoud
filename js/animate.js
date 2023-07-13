@@ -1,7 +1,5 @@
 
-
-
-
+$(function () {
 $('.home').animate({width:'100%'},100);
 $('.home').animate({height:'100vh'},800,function(){
     $('.navbar').animate({height:'10vh'},function(){
@@ -19,8 +17,6 @@ $('.home').animate({height:'100vh'},800,function(){
     });
     $('.footer').animate({height:'6vh'},700);
     $('.connect').animate({top:'0'})
-   
-
 $(window).scroll(function(){
     let windowscroll = $(window).scrollTop();
     let aboutoffset = $('.about').offset().top
@@ -61,8 +57,7 @@ $("a[href^='#]").click(function(eventInfo){
 $(document).ready(function(){
     $('.home').slideDown(500);
 })
-
-    
+});  
    
 
   
