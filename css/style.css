@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 body{
+ 
     background-color: #ede9e9;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
@@ -34,6 +35,7 @@ li{
     background-color: var(--main-color) !important;
     color: black !important;
 }
+
 /* home */
  .home{
     width: 10px;
@@ -56,8 +58,7 @@ li{
 button,.nav-link {
    display: none;
  }
- .nav-item{
-   
+ .nav-item{  
     text-align:right;
     margin-top: 5px;
     margin-bottom:15px !important;
@@ -95,8 +96,8 @@ button,.nav-link {
 .typing p {
   font-size:30px !important;
 }
-.connect {
-display: none;
+#contact{
+display: none ;
 }
 .home .conect .social i:hover {
         transform: translateY(7px);
@@ -334,4 +335,16 @@ position: relative;
  }
  }
 
- /* mediaquery
+ /* mediaquery*/
+
+ /* contact */
+ #contact{
+    display: none;
+ }
+ #downloadCV:hover{
+    box-shadow: 0 0 20px #302f2f,0 0 50px #302f2f, 0 0 100px #302f2f;
+   
+ }
+ /* contact */
+
+ 

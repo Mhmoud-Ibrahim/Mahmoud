@@ -1,4 +1,7 @@
 
+
+
+
 $('.home').animate({width:'100%'},100);
 $('.home').animate({height:'100vh'},800,function(){
     $('.navbar').animate({height:'10vh'},function(){
@@ -7,10 +10,7 @@ $('.home').animate({height:'100vh'},800,function(){
             $('.home-info h2').show(500,function(){
                 $('.home-info h3').show(1000,function(){
                     $('home-info i').fadeIn(400); 
-                    $('.connect').show(600,function(){
-        
-                                         
-                    })
+                   
                     });
                 });
                });
@@ -31,10 +31,10 @@ if(windowscroll > aboutoffset-250){
         $('.Pfojectsslide').show(1000,function(){
            if(windowscroll > 1500){
                $('#projects').show(1000,function(){
-               
-                $('#projects .col-md-3').show(2000);
+                $('#projects .col-md-3').show(2000,function(){
+                    $('#contact').slideDown(2000);
+                });
                })
-
            }
         });
     })
@@ -46,8 +46,8 @@ else if (windowscroll < aboutoffset-250)  {
            
         })
         $('#projects').hide(2000,function(){
-          
-            $('#projects .col-md-3').hide(2000)
+            $('#projects .col-md-3').hide(2000);
+            $('#contact').hide(2000);
         })
 
     })  
