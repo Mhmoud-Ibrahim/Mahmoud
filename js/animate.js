@@ -8,7 +8,10 @@ $('.home').animate({height:'100vh'},800,function(){
             $('.home-info h2').show(500,function(){
                 $('.home-info h3').show(1000,function(){
                     $('home-info i').fadeIn(400); 
-                   
+                    $('.connect').show(600 ,function(){
+                        $('.clock').show(700);
+                    });
+
                     });
                 });
                });

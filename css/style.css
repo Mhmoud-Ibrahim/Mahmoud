@@ -86,8 +86,18 @@ button,.nav-link {
     font-size:40px !important;
     color: var(--main-color) !important;
  }
-
-
+.connect {
+    display: none;
+}
+.clock{
+    z-index: 999;
+    right: 20px;
+    bottom:45px;
+    background-color: rgba(0,0,0,0.4) !important;
+    color: var(--main-color) !important;
+    box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
+    display: none;
+}
 
  .home-info i {
     transition: 1s all;
