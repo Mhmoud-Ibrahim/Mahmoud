@@ -27,8 +27,11 @@ $(window).scroll(function(){
     let aboutoffset = $('.about').offset().top
 if(windowscroll > aboutoffset-250){
     $('#heading').slideDown(1000,function(){
-        $('.about .row').slideDown(1000)
+        $('.about .row').slideDown(800)
         $('.about .row').css('display','flex');
+        $('#somephoto').slideDown(800)
+        $('#somephoto').css({display:'flex'},500);
+        
         $('.clock').hide(400);
         $('.Pfojectsslide').show(1000,function(){
            if(windowscroll > 1500){
@@ -45,6 +48,8 @@ if(windowscroll > aboutoffset-250){
 else if (windowscroll < aboutoffset-250)  {
     $('#heading').hide(200,function(){
         $('.about .row').hide(1000)
+        $('#somephoto').slideUp(800)
+        $('#somephoto').css({display:'none'},500);
         $('.clock').show(400);
         $('.Pfojectsslide').hide(1000,function(){
         })
