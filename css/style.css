@@ -91,14 +91,23 @@ button,.nav-link {
 }
 .clock{
     z-index: 999;
-    right: 20px;
+    right: 17px;
     bottom:45px;
     background-color: rgba(0,0,0,0.4) !important;
     color: var(--main-color) !important;
     box-shadow: 0 0 20px #aaccff,0 0 40px #aaccff, 0 0 60px #aaccff;
     display: none;
 }
-
+@media screen and (max-width:771px) {
+    .clock{
+        padding: 0;
+        width: 25% !important;
+        font-size: 8px !important;
+        text-align: center !important;
+        height: 5%;
+        right: 2px;
+    }
+}
  .home-info i {
     transition: 1s all;
  }

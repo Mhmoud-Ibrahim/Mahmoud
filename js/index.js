@@ -23,6 +23,9 @@ function getTime(){
   let theday
   for(let i =0;i<days.length;i++){
     theday = days[day+1]
+    if(days.length > 7){
+      theday = days[day[0]]
+    }
   }
   if(hours >12){
     hours = hours -12;
@@ -40,7 +43,7 @@ function getTime(){
   document.getElementById('hours').innerHTML = hours;
   document.getElementById('minutes').innerHTML = minutes;
   document.getElementById('seconds').innerHTML = seconds;
-  console.log(hours);
+ 
 
 }
 setInterval(getTime,1000)

@@ -20,6 +20,8 @@ $('.home').animate({height:'100vh'},800,function(){
     });
     $('.footer').animate({height:'6vh'},700);
     $('.connect').animate({top:'0'})
+
+
 $(window).scroll(function(){
     let windowscroll = $(window).scrollTop();
     let aboutoffset = $('.about').offset().top
@@ -27,11 +29,13 @@ if(windowscroll > aboutoffset-250){
     $('#heading').slideDown(1000,function(){
         $('.about .row').slideDown(1000)
         $('.about .row').css('display','flex');
+        $('.clock').hide(400);
         $('.Pfojectsslide').show(1000,function(){
            if(windowscroll > 1500){
                $('#projects').show(1000,function(){
                 $('#projects .col-md-3').show(2000,function(){
                     $('#contact').slideDown(2000);
+                   
                 });
                })
            }
@@ -41,13 +45,13 @@ if(windowscroll > aboutoffset-250){
 else if (windowscroll < aboutoffset-250)  {
     $('#heading').hide(200,function(){
         $('.about .row').hide(1000)
+        $('.clock').show(400);
         $('.Pfojectsslide').hide(1000,function(){
-           
         })
         $('#projects').hide(2000,function(){
             $('#projects .col-md-3').hide(2000);
-            $('#contact').hide(2000);
         })
+       
 
     })  
 }
