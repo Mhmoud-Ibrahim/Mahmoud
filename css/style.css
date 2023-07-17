@@ -364,6 +364,12 @@ position: relative;
     box-shadow: 0 0 20px #302f2f,0 0 50px #302f2f, 0 0 100px #302f2f;
    
  }
+ #contact .adress ul{
+    font-size: 12px !important;
+ }
+ #contact .social i{
+    font-size: 20px !important;
+ }
  /* contact */
 
  
