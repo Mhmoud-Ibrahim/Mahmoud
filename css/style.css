@@ -278,11 +278,12 @@ overflow: hidden;
     object-fit: cover;
     filter: brightness(80%);
     transition:  0.7s ease;
-    margin: 5px;
+   
 }
 .galary img:hover {
     width:100%;
     opacity: 1;
+   
     filter: brightness(130%);
 }
 
