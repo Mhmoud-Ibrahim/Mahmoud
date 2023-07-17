@@ -271,6 +271,7 @@ overflow: hidden;
     display: flex;
     width:100%;
     height:100%;
+    justify-content: center;
 }
 .galary img {
     width:0;
@@ -283,8 +284,9 @@ overflow: hidden;
 .galary img:hover {
     width:100%;
     opacity: 1;
-   
+    margin: 0 !important;
     filter: brightness(130%);
+  
 }
 
 /* end about */
